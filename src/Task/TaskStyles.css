@@ -1,0 +1,66 @@
+.task {
+  border-style: outset;
+  border-width: 3px;
+  border-color: var(--color-main);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.title {
+  color: var(--color-main);
+  text-decoration: underline;
+}
+
+
+.deleteButton {
+  color: var(--color-smoke);
+  background-color: var(--color-black);
+  border: var(--color-black);
+}
+
+
+.formButtons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+/*strip away the webkit appearance for the progress bar element*/
+.progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 75%;
+}
+ 
+/*styling for the progress bar itself 
+  does not include styling for the filled in part*/
+.progress[value]::-webkit-progress-bar {
+  background-color: var(--color-progBG);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px var(--color-progShadow) inset;
+}
+
+/*styling for the filled in portion of the progress bar*/
+.progress[value]::-webkit-progress-value {
+ background-color: var(--color-main);
+}
+
+/*************************
+    FireFox Styling
+*************************/
+/*Strip away styling*/
+.progress[value] {
+  -moz-appearance: none;
+  border: none;
+}
+/*Empty portion of progress bar*/
+.progress{
+ background-color: var(--color-progBG);
+ border-radius: 2px;
+ box-shadow: 0 2px 5px var(--color-progShadow) inset;
+}
+
+/*Fill portion of progress bar */
+.progress[value]::-moz-progress-bar{
+ background-color: var(--color-main);
+}

@@ -1,0 +1,28 @@
+:root {
+  --color-main: #48127a;
+  --color-grass: #3dd28d;
+  --color-snow: #FFFFFF;
+  --color-salmon: #d60707;
+  --color-smoke: #dadada;
+  --color-ash: #928f8f;
+  --color-black: #000000;
+  --color-progBG: #eee;
+  --color-sliderBG: #eee7f5;
+  --color-progShadow: rgba(0,0,0, 0.25);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.tasks {
+  width: 40%;
+}
+
+
+.graph {
+  width: 40%;
+  text-align: center;
+}

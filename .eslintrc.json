@@ -1,0 +1,20 @@
+{
+	"extends": [
+		"airbnb"
+	],
+	"rules": {
+		"react/button-has-type": [false],
+		"react/require-default-props":[false],
+		"react/jsx-wrap-multilines":[false],
+		"arrow-parens": [false],
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [
+					".js",
+					".jsx"
+				]
+			}
+		]
+	}
+}
